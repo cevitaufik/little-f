@@ -240,7 +240,11 @@
 
           <h6>Atau melalui email</h6>
           <div class="mb-3">
-            <form action="#" name="submit-to-google-sheet">
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Terimakasih</strong> pesan anda sudah kami terima. Kami akan segera menghubungi anda.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form action="#" name="contact-form">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" placeholder="name@example.com" name="nama">
                 <label for="floatingInput">Nama</label>
@@ -253,7 +257,11 @@
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="pesan"></textarea>
                 <label for="floatingTextarea2">Pesan</label>
               </div>
-              <button type="submit" class="btn btn-primary mt-3 d-grid col-3 mx-auto">Kirim</button>
+              <button type="submit" class="btn btn-primary mt-3 col-3 mx-auto btn-kirim">Kirim</button>
+              <button class="btn btn-primary mt-3 col-3 mx-auto btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -301,12 +309,24 @@
     AOS.init();
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbySp-ayFqNty1Gszg_oJOasD_FVzAbgTlclj8ZpOXUUIR-9DeNMguRhtDREx7_NFy59eQ/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const form = document.forms['contact-form']
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.alert');
 
     form.addEventListener('submit', e => {
       e.preventDefault()
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          form.reset();
+          console.log('Success!', response);
+        })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
