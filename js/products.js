@@ -1,6 +1,8 @@
 let products = [
   {
     "id" : "a",
+    "unggulan" : false,
+    "kategori" : "pakaian",
     "nama" : "Original kaos Homicide Godzkilla Necronometry",
     "harga" : "Rp. 275.000",
     "kualitas": "original",      
@@ -16,6 +18,8 @@ let products = [
   },
   {
     "id" : "b",
+    "unggulan" : true,
+    "kategori" : "pakaian",
     "nama" : "Original kaos Homicide Barisan Nisan",
     "harga" : "Rp. 275.000",
     "kualitas": "original",      
@@ -31,6 +35,8 @@ let products = [
   },
   {
     "id" : "c",
+    "unggulan" : true,
+    "kategori" : "pakaian",
     "nama" : "BARU Original Kaos Homicide 10th year Illsurrekshun",
     "harga" : "Rp. 350.000",
     "kualitas": "original",      
@@ -46,6 +52,8 @@ let products = [
   },
   {
     "id" : "d",
+    "unggulan" : true,
+    "kategori" : "buku",
     "nama" : "ORI TANDA TANGAN Catatan Najwa - Najwa Shihab",
     "harga" : "Rp. 150.000",
     "penulis" : "Najwa Shihab",
@@ -61,6 +69,8 @@ let products = [
   },
   {
     "id" : "e",
+    "unggulan" : false,
+    "kategori" : "buku",
     "nama" : "TEROR ORDE BARU",
     "harga" : "Rp. 85.000",
     "penulis" : "Julie Southwood - Patrick Planagan",
@@ -75,6 +85,8 @@ let products = [
   },
   {
     "id" : "f",
+    "unggulan" : false,
+    "kategori" : "buku",
     "nama" : "Agar Istri Suami Makin Sayang - Adil Fathi Abdullah",
     "harga" : "Rp. 25.000",
     "penulis" : "Adil Fathi Abdullah",
@@ -87,19 +99,4 @@ let products = [
     "gbr2" : "products/f-3.webp",
     "shopee" : "https://shopee.co.id/Agar-Istri-Suami-Makin-Sayang-Adil-Fathi-Abdullah-i.216352831.11412485576?position=2"
   }
-
-  // {
-  //   "id" : "",
-  //   "nama" : "",
-  //   "harga" : "Rp. ",
-  //   "penulis" : "",
-  //   "kualitas": "original",
-  //   "kondisi" : "Bekas",
-  //   "stock" : 1,
-  //   "bahan": "bookpaper",
-  //   "cover": "products/-1.webp",
-  //   "gbr1" : "products/-2.webp",
-  //   "gbr2" : "products/-3.webp",
-  //   "shopee" : ""
-  // }
 ]
