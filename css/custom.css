@@ -14,3 +14,25 @@
   background-color: #c4cdff;
   z-index: 10;
 }
+
+.explore-card-ribbon {
+  background-color: #f57f17;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: -36%;
+  transform: rotate(-40deg);
+  text-align: center;
+  padding: 8px 12px;
+  color: #f1f1f1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.explore-card {
+  /* width: 33.33%; */
+  overflow: hidden;
+  position: relative;
+}
