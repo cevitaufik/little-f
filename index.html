@@ -240,17 +240,17 @@
 
           <h6>Atau melalui email</h6>
           <div class="mb-3">
-            <form action="#">
+            <form action="#" name="submit-to-google-sheet">
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" placeholder="name@example.com">
+                <input type="text" class="form-control" placeholder="name@example.com" name="nama">
                 <label for="floatingInput">Nama</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" placeholder="name@example.com">
+                <input type="email" class="form-control" placeholder="name@example.com" name="email">
                 <label for="floatingInput">Alamat email</label>
               </div>
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="pesan"></textarea>
                 <label for="floatingTextarea2">Pesan</label>
               </div>
               <button type="submit" class="btn btn-primary mt-3 d-grid col-3 mx-auto">Kirim</button>
@@ -299,6 +299,16 @@
   <script rel="preconnect" src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySp-ayFqNty1Gszg_oJOasD_FVzAbgTlclj8ZpOXUUIR-9DeNMguRhtDREx7_NFy59eQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
