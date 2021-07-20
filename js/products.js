@@ -1,4 +1,4 @@
-let products = [
+const products = [
   {
     "id" : "a",
     "unggulan" : false,
@@ -166,7 +166,7 @@ let products = [
   {
     "id" : "k",
     "unggulan" : false,
-    "kategori" : "lain-lain",
+    "kategori" : "RAM Laptop",
     "nama" : "Ram laptop SODIMM DDR3L 2GB - Kingstone",
     "harga" : "Rp. 45.000",
     "penulis" : "Kingstone",
@@ -182,7 +182,7 @@ let products = [
   {
     "id" : "l",
     "unggulan" : false,
-    "kategori" : "lain-lain",
+    "kategori" : "RAM Laptop",
     "nama" : "Ram laptop SODIMM DDR3L 2GB - Samsung",
     "harga" : "Rp. 45.000",
     "penulis" : "Samsung",

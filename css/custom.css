@@ -12,27 +12,48 @@
 
 .unggulan {
   background-color: #c4cdff;
-  z-index: 10;
+  border-radius: 10px;
 }
 
-.explore-card-ribbon {
-  background-color: #f57f17;
-  width: 100%;
+.svg-bg-top {
+  background: url('/img/wavetop.svg') center top no-repeat;
+  background-size: cover;
+  height: 250px;  
+}
+
+.ribbon {
+  font-weight: 200;
+  color: white;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
   position: absolute;
-  top: 5%;
-  left: -36%;
-  transform: rotate(-40deg);
-  text-align: center;
-  padding: 8px 12px;
-  color: #f1f1f1;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  z-index: 5;
+  left: -8px;
+  top: 20px;
+  background: #fc0000;
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+}
+.ribbon:before {
+  height: 0;
+  width: 0;
+  top: -8.5px;
+  left: 0.1px;
+  border-bottom: 9px solid #fc0000;
+  border-left: 9px solid transparent;
+}
+.ribbon:after {
+  height: 0;
+  width: 0;
+  right: -14.5px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 14.5px solid #fc0000;
 }
 
-.explore-card {
-  /* width: 33.33%; */
-  overflow: hidden;
-  position: relative;
+.nonribbon {
+  display: none;
 }

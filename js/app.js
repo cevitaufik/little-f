@@ -19,11 +19,18 @@ app.filter('unggulan', () => {
   }
 })
 
-app.controller("productController", ($scope) => {
+app.filter('ribbon', () => {
+  return (product) => {
+    if (product) {
+      return 'ribbon'
+    } else {
+      return 'nonribbon'
+    }
+  }
+})
+
+app.controller("myController", ($scope) => {
+  $scope.owner = owner;
   $scope.products = products;
-  $scope.productTypes = [
-    {name: 'Pakaian', kategori: 'pakaian'},
-    {name: 'Buku', kategori: 'buku'},
-    {name: 'Lain-lain', kategori: 'lain-lain'}
-  ];
+  $scope.productCategory = category;
 });
