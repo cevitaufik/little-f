@@ -125,7 +125,7 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <a href="{{x.shopee}}" class="btn text-white mt-2 shopee" role="button" target="blank">Order lewat Shopee</a>
-                          <a href="https://api.whatsapp.com/send?phone=6289632943033&text=Apakah%20&quot;{{x.nama | deleteSpace}}&quot;%20masih%20ada?" class="btn mt-2 whatsapp text-white" role="button" target="blank">
+                          <a href="https://api.whatsapp.com/send?phone={{owner.whatsapp}}&text=Apakah%20&quot;{{x.nama | deleteSpace}}&quot;%20masih%20ada?" class="btn mt-2 whatsapp text-white" role="button" target="blank">
                             <span class="bi bi-whatsapp"></span>&nbsp;&nbsp;Chat
                           </a>
                         </div>      
@@ -211,7 +211,7 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                           <a href="{{x.shopee}}" class="btn text-white mt-2 shopee" role="button" target="blank">Order lewat Shopee</a>
-                          <a href="https://api.whatsapp.com/send?phone=6289632943033&text=Apakah%20&quot;{{x.nama | deleteSpace}}&quot;%20masih%20ada?" class="btn mt-2 whatsapp text-white" role="button" target="blank">
+                          <a href="https://api.whatsapp.com/send?phone={{owner.whatsapp}}&text=Apakah%20&quot;{{x.nama | deleteSpace}}&quot;%20masih%20ada?" class="btn mt-2 whatsapp text-white" role="button" target="blank">
                             <span class="bi bi-whatsapp"></span>&nbsp;&nbsp;Chat
                           </a>
                         </div>      
@@ -241,7 +241,7 @@
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" ng-model="pesan"></textarea>
                 <label for="floatingTextarea2">Tulis pesan Whatsapp anda disini</label>
                 <div class="d-grid col-3 mx-auto">
-                  <a href="https://api.whatsapp.com/send?phone=6289632943033&text={{ pesan | deleteSpace}}" class="btn mt-3 whatsapp bi bi-whatsapp text-white" role="button" target="blank">&nbsp;Kirim</a>
+                  <a href="https://api.whatsapp.com/send?phone={{owner.whatsapp}}&text={{ pesan | deleteSpace}}" class="btn mt-3 whatsapp bi bi-whatsapp text-white" role="button" target="blank">&nbsp;Kirim</a>
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@
   <script>
     AOS.init();
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbySp-ayFqNty1Gszg_oJOasD_FVzAbgTlclj8ZpOXUUIR-9DeNMguRhtDREx7_NFy59eQ/exec'
+    const scriptURL = '{{owner.googleSheet}}'
     const form = document.forms['contact-form']
     const btnKirim = document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
