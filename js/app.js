@@ -19,13 +19,18 @@ app.filter('unggulan', () => {
   }
 })
 
-app.filter('ribbon', () => {
-  return (product) => {
-    if (product) {
-      return 'ribbon'
-    } else {
-      return 'nonribbon'
-    }
+app.filter('active', () => {
+  return (img) => {
+    let active = [];
+
+    angular.forEach(img, (e) => {
+      if(active.length == 0) {
+        active.push('active')
+      } else {
+        active.push('')
+      }
+    })
+    return active;
   }
 })
 
