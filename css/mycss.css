@@ -24,11 +24,11 @@
   background-color: #ee4d2d;
 }
 
-#footer img {
+.social-img {
   width: 30px;
 }
 
-#footer .social {
+.social {
   line-height: 30px;
   padding-left: 35px;
 }
