@@ -207,7 +207,72 @@ const products = [
     "gbr2" : "products/p-3.webp",
     "shopee" : "https://shopee.co.id/Guantanamo-diary-Mohamedou-Ould-Slahi-i.216352831.3491147228?position=18",
     "tokopedia" : "tokopedia.com"
-  }
+  },
+  {
+    "id" : "q",
+    "unggulan" : false,
+    "kategori" : "buku",
+    "nama" : "Pasar modal diujung pena",
+    "harga" : "Rp. 30.000",
+    "deskripsi" : ["Original", "Bekas", "Book paper", "Sudah berjamur dibagian pinggir"],
+    "cover": "products/q-1.webp",
+    "gbr1" : "products/q-2.webp",
+    "gbr2" : "products/q-3.webp",
+    "shopee" : "https://shopee.co.id/Pasar-modal-diujung-pena-i.216352831.8082265849?position=0",
+    "tokopedia" : "tokopedia.com"
+  },
+  {
+    "id" : "r",
+    "unggulan" : false,
+    "kategori" : "buku",
+    "nama" : "Agar pernikahan seindah impian - Muhammad Albani",
+    "harga" : "Rp. 20.000",
+    "deskripsi" : ["Karangan Muhammad Albani", "Original", "Bekas", "Kertas HVS", "Masih seperti baru"],
+    "cover": "products/r-1.webp",
+    "gbr1" : "products/r-2.webp",
+    "gbr2" : "products/r-3.webp",
+    "shopee" : "https://shopee.co.id/Agar-pernikahan-seindah-impian-Muhammad-Albani-i.216352831.10320934468?position=1",
+    "tokopedia" : "tokopedia.com"
+  },
+  {
+      "id" : "s",
+      "unggulan" : false,
+      "kategori" : "buku",
+      "nama" : "Menguak misteri kekuasaan Soeharto - Baskara T Wardaya",
+      "harga" : "Rp. 25.000",
+      "deskripsi" : ["Karangan Baskara T Wardaya", "Original", "Masih seperti baru", "Bekas", "Kertas HVS"],
+      "cover": "products/s-1.webp",
+      "gbr1" : "products/s-2.webp",
+      "gbr2" : "products/s-3.webp",
+      "shopee" : "https://shopee.co.id/Menguak-misteri-kekuasaan-Soeharto-Baskara-T-Wardaya-i.216352831.10320934345?position=2",
+      "tokopedia" : "tokopedia.com"
+    },
+    {
+      "id" : "t",
+      "unggulan" : false,
+      "kategori" : "buku",
+      "nama" : "The day of the jackal - Frederick Forsyth",
+      "harga" : "Rp. 30.000",
+      "deskripsi" : ["Karangan Frederick Forsyth", "Original", "Bekas", "Book paper", "Bahasa Indonesia"],
+      "cover": "products/t-1.webp",
+      "gbr1" : "products/t-2.webp",
+      "gbr2" : "products/t-3.webp",
+      "shopee" : "https://shopee.co.id/The-day-of-the-jackal-Frederick-Forsyth-i.216352831.9482247935?position=3",
+      "tokopedia" : "tokopedia.com"
+    },
+    {
+      "id" : "u",
+      "unggulan" : false,
+      "kategori" : "buku",
+      "nama" : "Omerta - Mario Puzo",
+      "harga" : "Rp. 30.000",
+      "deskripsi" : ["karangan Mario Puzo", "Bekas", "Original", "Book paper", "Sudah disampul"],
+      "cover": "products/u-1.webp",
+      "gbr1" : "products/u-2.webp",
+      "gbr2" : "products/u-3.webp",
+      "shopee" : "https://shopee.co.id/Omerta-Mario-Puzo-i.216352831.8682259466?position=4",
+      "tokopedia" : "tokopedia.com"
+    }
 
   // {
   //   "id" : "",
@@ -217,7 +282,9 @@ const products = [
   //   "harga" : "Rp. ",
   //   "deskripsi" : [],
   //   "cover": "products/-1.webp",
+  //   "gbr1" : "products/-2.webp",
+  //   "gbr2" : "products/-3.webp",
   //   "shopee" : "",
-  //   "tokopedia" : ""
+  //   "tokopedia" : "tokopedia.com"
   // }
 ]
